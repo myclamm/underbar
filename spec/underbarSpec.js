@@ -1,4 +1,4 @@
-describe('identity', function() {
+describe('identity', function(x) {
   var uniqueObject = {};
 
   it('should return whatever value is passed into it', function() {
@@ -12,7 +12,7 @@ describe('identity', function() {
   });
 });
 
-describe('first', function() {
+describe('first', function(array,index) {
   it('should be able to pull out the first element of an array', function() {
     expect(_.first([1,2,3])).to.equal(1);
   });
